@@ -5,7 +5,7 @@
 * This class is a controller for APTS_AgreementTypeAIMLModel Visualforce page
 * Calls KIRA Rest APIs to retrieve/update project details and it's template/provisions.
 * Creates/updates records in objects related to intelligent import functionality to 
-* Maintains correct mappings correspodning to KIRA projects.
+* Maintains correct mappings correspodning to KIRA projects. testing 
 * ──────────────────────────────────────────────────────────────────────────────────────────────────
 * @author         Chetan Patel   <cpatel@apttus.com>
 * @modifiedBy     Chetan Patel   <cpatel@apttus.com>
@@ -25,7 +25,7 @@
 *                 everytime changes made in project in save method. line 493
 * ─────────────────────────────────────────────────────────────────────────────────────────────────┘
 **/
-
+/*Testing CICD*/
 public class APTS_AgreementTypeAIMLModelController {
 
     public Apttus__IDEMapProjectRecordType__c IDEMapProjectRecordType { get; set; }
