@@ -1,0 +1,37 @@
+<apex:page controller="APTSMD_clearAccountControllerWithKeyword" lightningStylesheets="true">
+      <style>
+        body .bPageBlock .pbBody .dataCol {
+            font-weight: bold !important;
+            color: #3197BF !important;
+        }
+        .instruction{
+            color: #3197BF !important;
+        }
+     </style>
+      <apex:form >
+          <apex:pageBlock title="Clear Data">
+              <apex:pageMessages ></apex:pageMessages>
+                    <apex:outputText >
+                        <b class="instruction">Note: If only Account is entered then all the records will get cleared else only records matching the keyword will get cleared.<br/>
+                        </b>
+                        <b style="color: Red !important;">
+                            Please make sure ‘Is Include in report' checkbox is not checked on Account, it will delete related data which may impact on reports and dashboard.    
+                        </b>
+                    </apex:outputText><br/><br/>
+                    <apex:pageBlockSection >
+                        <apex:inputText label="Insert Account Name to Clear" value="{!AccName}" required="true" style="border-left-color: red;border-left-style: solid;"/>
+                            <apex:outputText styleClass="instruction">
+                                1. On click of Clear Data it will clear all the Proposals,Orders,Billing Summary,Billing Schedules,Invoices on the mentioned Account.
+                            </apex:outputText>
+                        <apex:inputText label="Insert Keyword" value="{!keyword}"/>    
+                            <apex:outputText styleClass="instruction">
+                                2. On click of Clear Data it will clear Opportunities,Proposals,Agreements and Product Configurations containing this keyword under Account.
+                        </apex:outputText>
+                    </apex:pageBlockSection>
+                    <apex:pageBlockButtons >
+                        <apex:commandButton value="Clear Data" action="{!Submit}"/>
+                        <apex:commandButton value="Cancel" action="{!cancel}"/>    
+                    </apex:pageBlockButtons>  
+          </apex:pageBlock>
+      </apex:form>
+</apex:page>

@@ -1,0 +1,101 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    
+    <div style="border-radius:5px;padding: 10px; background-color:white;" class="mainDiv">
+  	 	<h2 style="font-weight:normal;font-size: 1.3em;cursor:pointer" onclick="{!c.toggle}">
+            <lightning:icon style="margin-right:5px" aura:id="firstButton" iconName="utility:chevronright" size="x-small" alternativeText="Expand" />
+            <span style="vertical-align: middle;">SE Links</span>
+        </h2>
+	<br></br>
+   	<ul id="link-list" style="list-style-type:disc;padding-left: 30px;display:none">
+    	<li style="margin-bottom: 5px;"> 
+            <a aura:id="proposalQuote" onclick="{!c.clearaccount}">                       
+                <span class="osOutputLabel">Clear Account With Keyword</span>
+            </a>
+        </li>
+        <li style="margin-bottom: 5px;"> 
+             <a aura:id="proposalQuote" onclick="{!c.mdoreset}">
+                 <span class="osOutputLabel">Clear Data</span>
+             </a>
+        </li>
+        <!--<li style="margin-bottom: 5px;"> -->
+        <!--     <a aura:id="ecomm" onclick="{!c.redirectEcommerce}">-->
+        <!--         <span class="osOutputLabel">Launch eCommerce</span>-->
+        <!--     </a>-->
+        <!--</li>-->
+        <li style="margin-bottom: 5px;">
+              <a aura:id="proposalQuote" onclick="{!c.setupadobesign}">
+                 <span class="osOutputLabel">Setup Adobe Sign</span>
+             </a>
+        </li>
+        <li style="margin-bottom: 5px;"><ui:outputURL aura:id="oURL5" label="Custom Setting Search" target="_Blank" value="/apex/APTSMD_CustomSettingFieldList"/></li>
+        <li style="margin-bottom: 5px;"><ui:outputURL aura:id="oURL5" label="Custom Setting Comparator" target="_Blank" value="/apex/APTSMD_CustomSettingComparator"/></li>
+   		 <li style="margin-bottom: 5px;">
+            <a aura:id="proposalQuote" onclick="{!c.massdeleteactivity}">
+             <span class="osOutputLabel">Mass Delete Activity</span>
+            </a>
+           </li>
+        
+        <!--<li style="margin-bottom: 5px;">
+         
+                            <a aura:id="proposalQuote" onclick="{!c.MDOReleaseNotes}">
+
+                                <span class="osOutputLabel">Release Notes</span>
+                            </a>
+       </li>-->
+        <li style="margin-bottom: 5px;">
+         
+                            <a aura:id="proposalQuote" onclick="{!c.MDODemoScripts}">
+
+                                <span class="osOutputLabel">Tier1 Demo Scripts</span>
+                            </a>
+       </li>
+        <li style="margin-bottom: 5px;">
+         
+                            <a aura:id="proposalQuote" onclick="{!c.MDOCustomVsOOBFeatures}">
+
+                                <span class="osOutputLabel">MDO Custom Vs OOB Features</span>
+                            </a>
+           </li>
+           <li style="margin-bottom: 5px;">
+         
+                            <a aura:id="proposalQuote" onclick="{!c.intelligentImportSampleDoc}">
+
+                                <span class="osOutputLabel">Intelligent Import Sample Documents</span>
+                            </a>
+           </li>
+        	<li style="margin-bottom: 5px;">
+                <a aura:id="kiraProjectListView" onclick="{!c.kiraProjectListView}">
+                    <span class="osOutputLabel">Manage Agreement Type AIML Models</span>
+                </a>
+           </li>
+        	<li style="margin-bottom: 5px;">
+         
+                            <a aura:id="proposalQuote" onclick="{!c.updateDateField}">
+
+                                <span class="osOutputLabel">Update Report Data With Latest Dates</span>
+                            </a>
+           </li>
+        	<li style="margin-bottom: 5px;">
+				<a aura:id="manageAIIJobs" onclick="{!c.manageAIIJobs}">
+	                <span class="osOutputLabel">Abort AII Jobs</span>
+				</a>
+           </li>
+           	<li style="margin-bottom: 5px;">
+				<a aura:id="deleteDupClauses" onclick="{!c.deleteDuplicateClauses}">
+	                <span class="osOutputLabel">Delete Duplicate Clauses</span>
+				</a>
+           </li>
+           <!--<li style="margin-bottom: 5px;">
+				<a aura:id="apttusLabPortal" onclick="{!c.apttusLabPortal}">
+	                <span class="osOutputLabel">Apttus Lab Portal</span>
+				</a>
+           </li>
+        	<li style="margin-bottom: 5px;">
+				<a aura:id="apttuslabfeedbackform" onclick="{!c.releaseDocumentSearch}">
+	                <span class="osOutputLabel">Release Document Search (Beta)</span>
+				</a>
+           </li>-->
+        </ul>
+    </div>
+	
+</aura:component>

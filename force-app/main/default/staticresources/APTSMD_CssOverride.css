@@ -1,0 +1,43 @@
+/*added by vivek as on 24/08/2020 to fix search icon alignment on product search textbox catalogue page*/
+.search-area-search-term {
+    display: contents !important;
+}
+.product-dialog-height {
+	    max-height: 32rem !important;
+}
+.product-dialog-height > .ands-dialog-footer {
+	display: none !important; 
+}
+.header-totals > .subheader{
+	width:600px;
+}
+/* .proposal-summary__display > .proposal-summary__current {
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+} */
+proposal-summary{
+    width: 600px;
+}
+.custom-action-dialog {
+    width:80%;
+}
+/*added by vivek to increase price ramp dialog size Dt. 19-08-2019*/
+.ramp-dialog, .usage-tier-dialog, .selected-asset-dialog {
+    max-height: 50%;
+    min-height: 20%;
+    left: 35%;
+    max-width: 90%;
+}
+.svg-container{
+	
+	overflow: visible !important; 
+}
+svg {
+  height: 150% !important;
+  width: 100% !important;    
+    
+}
